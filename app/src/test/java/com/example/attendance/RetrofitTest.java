@@ -121,44 +121,5 @@ public class RetrofitTest {
         }
     }
 
-    @Test
-    public void testUpdateEmployee() {
-        CountDownLatch latch = new CountDownLatch(1);
-
-        System .out.println("Insert Test Initiated");
-        String id = "User101";
-        File file = new File("src\\test\\resources\\Kangana.jpg");
-        File successfile = getFileFromPath(this,"success.json");
-        assertThat(successfile, notNullValue());
-        retorInstance = RestApiClient.getUser().create(RetorInstance.class);
-        RequestBody requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file);
-        MultipartBody.Part body = MultipartBody.Part.createFormData("file", file.getName(), requestFile);
-        RequestBody rId = RequestBody.create(MediaType.parse("multipart/form-data"), id);
-        System.out.println("RetorInstance is:"+retorInstance);
-        System .out.println("Parameter rid:"+rId);
-        System .out.println("Parameter id:"+id);
-        retorInstance.UpdateEmployeeInfo(rId,body).enqueue(new Callback<APIResponse>() {
-            @Override
-            public void onResponse(Call<APIResponse> call, Response<APIResponse> response) {
-                System.out.println("Present");
-                latch.countDown();
-            }
-
-            @Override
-            public void onFailure(Call<APIResponse> call, Throwable t) {
-                System.out.println(t.getMessage());
-                latch.countDown();
-            }
-        });
-
-        try {
-            latch.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-
-
 }
 
