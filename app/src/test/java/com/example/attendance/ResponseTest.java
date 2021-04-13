@@ -41,24 +41,6 @@ public class ResponseTest {
         Assert.assertEquals(ti.testmark(String.valueOf(19031),"2/02/2021","Present","09:21:20","07:15:19"),true);
     }
 
-    @Test
-    public void testFetchStatus(){
-        when(helper.Fetch_recent_status(String.valueOf(19031),"2/02/2021")).thenReturn("Present");
-        Assert.assertEquals(ti.testfetchstatus(String.valueOf(19031),"2/02/2021"),"Present");
-    }
-
-    @Test
-    public void testFetchCheckIN(){
-        when(helper.Fetch_Check_IN(String.valueOf(19031),"2/02/2021")).thenReturn("Present");
-        Assert.assertEquals(ti.testfetchcheckin(String.valueOf(19031),"2/02/2021"),"Present");
-    }
-
-    @Test
-    public void testFetchCheckOut(){
-        when(helper.Fetch_Check_out(String.valueOf(19031),"2/02/2021")).thenReturn("Present");
-        Assert.assertEquals(ti.testfetchcheckout(String.valueOf(19031),"2/02/2021"),"Present");
-    }
-
 //    @Test
 //    public void verifySetData()
 //    {
