@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#eeeeee"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            >
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/black"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:orientation="vertical">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"
+                        android:text="ID :"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:id="@+id/eid"
+                        android:layout_weight="0.8"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="ID"
+                        android:textSize="15sp"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="Date"
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:id="@+id/ldate"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Date"
+                        android:textSize="15sp"/>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="Status"
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:id="@+id/lstatus"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Status"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="Check In"
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:id="@+id/checkintime"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Check in"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:text="Check Out"
+                        android:textStyle="bold"
+                        android:textSize="15sp"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:id="@+id/checkouttime"
+                        android:layout_marginStart="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="Check Out"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
